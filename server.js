@@ -8,7 +8,7 @@ function action(request,response){
 	if(request.url=='/'&&request.method=='GET'){
 		response.writeHead(200,{"Content-type":"text/html"});
 		fs.createReadStream("./untitled.html").pipe(response);
-	}else if(request.url=='/myaction'&&request.method=='get'){
+	}else if(request.url=='/myaction'&&request.method=='GET'){
 		response.writeHead(200,{"Content-type":"text/html"});
 		fs.createReadStream("./patani.html").pipe(response);
 	}

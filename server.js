@@ -3,6 +3,7 @@ var fs = require('fs');
 http.createServer(action).listen(8888);
 console.log("server is now running");
 
+
 function action(request,response){
 	if(request.url=='/'&&request.method=='GET'){
 		response.writeHead(200,{"Content-type":"text/html"});
